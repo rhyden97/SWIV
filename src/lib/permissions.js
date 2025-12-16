@@ -1,0 +1,21 @@
+export const ROUTE_PERMISSIONS = {
+  "/dashboard/inventario/nuevo": ["administrador", "almacen"],
+  "/dashboard/clientes/nuevo": ["administrador", "ventas"],
+  "/dashboard/ventas/nueva": ["administrador", "ventas"],
+  "/dashboard/ordenes-de-compra/nueva": ["administrador", "almacen"],
+  "/dashboard/ordenes-de-compra/recepcion": ["administrador", "almacen"],
+  "/dashboard/proveedores/nuevo": ["administrador", "almacen"],
+
+  "/dashboard": ["administrador", "almacen", "ventas", "visitante"],
+  "/dashboard/almacen": ["almacen", "administrador"],
+  "/dashboard/inventario": ["administrador", "almacen", "visitante"],
+  "/dashboard/pedidos": ["administrador", "almacen", "ventas", "visitante"],
+  "/dashboard/ventas": ["administrador", "ventas", "visitante"],
+  "/dashboard/clientes": ["administrador", "ventas", "visitante"],
+  "/dashboard/ordenes-de-compra": ["administrador", "almacen", "visitante"],
+  "/dashboard/proveedores": ["administrador", "almacen", "visitante"],
+  "/dashboard/predicciones": ["administrador", "visitante"],
+  "/dashboard/reportes": ["administrador", "visitante"],
+  "/dashboard/auditoria": ["administrador", "visitante"],
+  "/dashboard/usuarios": ["administrador"],
+};
